@@ -15,6 +15,6 @@ public class MyCartController {
 	@GetMapping(path="/mycart/getTotalItems")
 	public String getCartCount() {
 		
-		return "any Number of items " + environment.getProperty("local.server.port");
+		return "Items returned from CartService : " + environment.getProperty("local.server.port");
 	}
 }
